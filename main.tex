@@ -232,7 +232,7 @@
 %
 \newcommand{\cvevent}[7]
 {
-\vspace{8pt}
+\vspace{3pt}
 	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
  	\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3}, \textcolor{bgcol}{#1} 
 
@@ -246,30 +246,40 @@
 \larrow{softcol}  #6\\[2pt]
 \larrow{softcol}  #7\\[14pt]
 	\end{tabular*}
+\vspace{-6pt}
+
+}
+\newcommand{\cveventA}[3]
+{
+	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
+ 	\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3}, \textcolor{bgcol}{#1} 
+
+	\end{tabular*}
 
 }
 
 
 \newcommand{\expertiseB}[5]
 {
-\vspace{8pt}
+\vspace{3pt}
 	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
  	\textcolor{black}{\textbf{#2}} & \textcolor{bgcol}{#1} 
 
 	\end{tabular*}
 \vspace{-12pt}
 \textcolor{softcol}{\hrule}
-\vspace{6pt}
+\vspace{3pt}
 	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
 \larrow{softcol}  #3\\[3pt]
 \larrow{softcol}  #4\\[6pt]
 	\end{tabular*}
+\vspace{-6pt}
 
 }
 
 \newcommand{\expertiseA}[5]
 {
-\vspace{8pt}
+\vspace{3pt}
 	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
  	\textcolor{black}{\textbf{#2}} & \textcolor{bgcol}{#1} 
 
@@ -414,15 +424,15 @@ I have a strong passion for functional programming, and I am trying to apply it 
 %
 \expertiseB{8 years experience}{C\#}
 {
-  Developed and maintain tools for our developers to be able to create more productive in creating business integrations (SAP, SQL, ReavenDB, DSL)
+  Developed and maintain tools for our developers to be able to create more productive in creating business integrations (SAP, SQL, ReavenDB, DSL).
 }
 {
-	Maintaining important code base for fiscal printers implementation	
+	Maintaining important code base for fiscal printers implementation.
 }
 
 \expertiseA{3 years experience}{Java}
 {
-I have used Java to create plugins for Jira and Confluence which handles the company workflows for finance, sales, consulting and software development departments
+I have used Java to create plugins for Jira and Confluence which handles the company workflows for finance, sales, consulting and software development departments.
 }
 
 
@@ -430,10 +440,10 @@ I have used Java to create plugins for Jira and Confluence which handles the com
 {
 	Created Integrations between point of sale to/from SAP for big retails 
 
-	(Accounting, Invoices, Credit Notes, Inventory ...)
+	(Accounting, Invoices, Credit Notes, Inventory ...).
 }
 {
-	Experience in SAP HANA, Oracle, Postgres 
+	Experience in SAP HANA, Oracle, Postgres.
 }
 
 \expertiseB{2 years experience}{Nix/NixOS}
@@ -441,7 +451,7 @@ I have used Java to create plugins for Jira and Confluence which handles the com
 	Designed the QA server, deployment server and developement enviorments at work.
 }
 {
-	Most of my personal configurations, tools and applications are defined in nix expersions
+	Most of my personal configurations, tools and applications are defined in nix expressions.
 }
 
 %\textcolor{softcol}{\hrule}
@@ -450,26 +460,33 @@ I have used Java to create plugins for Jira and Confluence which handles the com
 
 \vspace{7pt}
 %---------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+%	Employment SECTION
 %--------------------------------------------------------------------------------------
 \cvsection{Employment}
 
 \cvevent{2010/09-now}{Software Architect}{TopManage}
 {
-	Plan and design development depertment workflows - Source Control, Build Server, 
+	Plan and design development department workflows - Source Control, Build Server, 
 
-	QA Server and Jira ticketing system(Agile - Kanban) 
+	QA Server and Jira ticketing system(Agile - Kanban).
 }
 {
 	Managed Service Desk and products releases - 
-	filter ,organize and priortize tickets coming from clients, managed products life cycle 
+	filter, organize and prioritize tickets coming from clients, managed products life cycle.
 }
 {
-	Trained new developers - FP, OOP, purity, Code Readablity, DRY pricenple, Testing.
+	Trained new developers - FP, OOP, purity, Code Readability, DRY principle, Testing.
 }
 {
-Created data web server over SAP - this server helps us to access SAP via REST protocol and allow our internal Jiras server to communicate with SAP more straightforwardly, We are using it as well as an interface for external projects to have cloud access to SAP.
+	Created data web server over SAP - this server helps us to access SAP via REST protocol and allow our internal Jiras server to communicate with SAP more straightforwardly, We are using it as well as an interface for external projects to have cloud access to SAP.
 }
+\vspace{7pt}
+%---------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%--------------------------------------------------------------------------------------
+\cvsection{Education}
+
+\cveventA{In Progress}{Open University}{Computer Science}
 
 %\textcolor{softcol}{\hrule}
 
