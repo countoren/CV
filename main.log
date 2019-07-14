@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/NixOS.org) (preloaded format=pdflatex 2019.6.25)  1 JUL 2019 13:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/NixOS.org) (preloaded format=pdflatex 2019.6.25)  13 JUL 2019 19:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1287,11 +1287,11 @@ LaTeX Info: Redefining \nameref on input line 346.
 
 LaTeX Font Info:    Font shape `T1/GilliusADF-LF/m/n' will be
 (Font)              scaled to size 29.86pt on input line 476.
-<myfoto.jpg, id=7, 1123.19624pt x 691.58376pt>
+<myfoto.jpg, id=7, 1204.5pt x 903.375pt>
 File: myfoto.jpg Graphic file (type jpg)
 <use myfoto.jpg>
 Package pdftex.def Info: myfoto.jpg  used on input line 476.
-(pdftex.def)             Requested size: 384.79655pt x 169.63113pt.
+(pdftex.def)             Requested size: 384.79655pt x 210.22917pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 476.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1368,70 +1368,59 @@ Overfull \hbox (204.39828pt too wide) in alignment at lines 476--476
  []
 
 LaTeX Font Info:    Font shape `T1/GilliusADF-LF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 553.
+(Font)              scaled to size 12.0pt on input line 552.
 LaTeX Font Info:    Try loading font information for U+fontawesomefree1 on inpu
-t line 553.
+t line 552.
 
 (/nix/store/3c3fg8wd0da08xmijl45zj99h62b6rga-texlive-combined-full-2018/share/t
 exmf/tex/latex/fontawesome5/ufontawesomefree1.fd)
 LaTeX Font Info:    Try loading font information for U+fontawesomebrands0 on in
-put line 553.
+put line 552.
 
 (/nix/store/3c3fg8wd0da08xmijl45zj99h62b6rga-texlive-combined-full-2018/share/t
 exmf/tex/latex/fontawesome5/ufontawesomebrands0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
 available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 553.
+n input line 552.
 LaTeX Font Info:    Try loading font information for U+fontawesomefree0 on inpu
-t line 553.
+t line 552.
 
 (/nix/store/3c3fg8wd0da08xmijl45zj99h62b6rga-texlive-combined-full-2018/share/t
 exmf/tex/latex/fontawesome5/ufontawesomefree0.fd)
 LaTeX Font Info:    Try loading font information for U+fontawesomefree2 on inpu
-t line 553.
+t line 552.
 
 (/nix/store/3c3fg8wd0da08xmijl45zj99h62b6rga-texlive-combined-full-2018/share/t
 exmf/tex/latex/fontawesome5/ufontawesomefree2.fd)
 LaTeX Font Info:    Try loading font information for U+fontawesomebrands1 on in
-put line 553.
+put line 552.
 
 (/nix/store/3c3fg8wd0da08xmijl45zj99h62b6rga-texlive-combined-full-2018/share/t
 exmf/tex/latex/fontawesome5/ufontawesomebrands1.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands1/solid/n' in size <10> not 
 available
 (Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
-n input line 553.
+n input line 552.
 LaTeX Font Info:    Font shape `T1/GilliusADF-LF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 553.
+(Font)              scaled to size 17.28pt on input line 552.
 LaTeX Font Info:    Try loading font information for U+fontawesomefree3 on inpu
-t line 553.
+t line 552.
 
 (/nix/store/3c3fg8wd0da08xmijl45zj99h62b6rga-texlive-combined-full-2018/share/t
 exmf/tex/latex/fontawesome5/ufontawesomefree3.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <17.28> n
 ot available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 553.
-<qrcode.png, id=13, 582.175pt x 582.175pt>
+n input line 552.
+<qrcode.png, id=13, 200.75pt x 200.75pt>
 File: qrcode.png Graphic file (type png)
 <use qrcode.png>
-Package pdftex.def Info: qrcode.png  used on input line 553.
-(pdftex.def)             Requested size: 58.41284pt x 58.40746pt.
+Package pdftex.def Info: qrcode.png  used on input line 552.
+(pdftex.def)             Requested size: 58.41284pt x 58.41205pt.
 
-Overfull \hbox (24.75583pt too wide) in paragraph at lines 476--554
+Overfull \hbox (24.75583pt too wide) in paragraph at lines 476--553
 [][][][][][][] 
- []
-
-LaTeX Font Info:    Font shape `T1/GilliusADF-LF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 561.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 561.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 561.
-
-Overfull \hbox (145.41855pt too wide) in paragraph at lines 561--562
-[] [][][][][][] 
  []
 
 
@@ -1440,24 +1429,22 @@ Overfull \vbox (5.0pt too high) has occurred while \output is active []
  [1
 
 {/nix/store/3c3fg8wd0da08xmijl45zj99h62b6rga-texlive-combined-full-2018/share/t
-exmf/fonts/map/pdftex/updmap/pdftex.map} <./myfoto.jpg> <./qrcode.png (PNG copy
-)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 572.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 572.
-
-(./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 572.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 572.
+exmf/fonts/map/pdftex/updmap/pdftex.map} <./myfoto.jpg> <./qrcode.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 570.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 570.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 570.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 570.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 572.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 570.
  ) 
 Here is how much of TeX's memory you used:
- 31893 strings out of 492616
- 662708 string characters out of 6106109
- 708671 words of memory out of 5000000
- 35362 multiletter control sequences out of 15000+600000
- 550752 words of font info for 56 fonts, out of 8000000 for 9000
+ 31876 strings out of 492616
+ 662487 string characters out of 6106109
+ 707671 words of memory out of 5000000
+ 35353 multiletter control sequences out of 15000+600000
+ 546701 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,69p,436b,586s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/nix/store/3c3fg8wd0da08xmijl45zj99h62b6rga-texlive-combined-full-2018/share
@@ -1478,12 +1465,11 @@ are/texmf/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></nix/stor
 e/3c3fg8wd0da08xmijl45zj99h62b6rga-texlive-combined-full-2018/share/texmf/fonts
 /type1/arkandis/gillius/GilliusADF-Bold.pfb></nix/store/3c3fg8wd0da08xmijl45zj9
 9h62b6rga-texlive-combined-full-2018/share/texmf/fonts/type1/arkandis/gillius/G
-illiusADF-Regular.pfb></nix/store/3c3fg8wd0da08xmijl45zj99h62b6rga-texlive-comb
-ined-full-2018/share/texmf/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on main.pdf (1 page, 229341 bytes).
+illiusADF-Regular.pfb>
+Output written on main.pdf (1 page, 295547 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
