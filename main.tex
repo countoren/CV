@@ -69,7 +69,7 @@
 \usepackage{moresize}		
 
 \usepackage{fontawesome5}
-
+\usepackage{tikz}
 %----------------------------------------------------------------------------------------
 %	PAGE LAYOUT  DEFINITIONS
 %----------------------------------------------------------------------------------------
@@ -211,7 +211,7 @@
 % param 1: meta section title
 %
 \newenvironment{metasection}[1] {
-	\vspace{6pt}
+	\vspace{9pt}
 	\begin{center}
 		\textcolor{white}{\large{\uppercase{#1}}}\\
 	\normalsize
@@ -232,20 +232,19 @@
 %
 \newcommand{\cvevent}[7]
 {
-\vspace{3pt}
 	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
  	\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3}, \textcolor{bgcol}{#1} 
 
 	\end{tabular*}
 \vspace{-12pt}
 \textcolor{softcol}{\hrule}
-\vspace{6pt}
-	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
-\larrow{softcol}  #4\\[14pt]
-\larrow{softcol}  #5\\[14pt]
-\larrow{softcol}  #6\\[2pt]
-\larrow{softcol}  #7\\[14pt]
-	\end{tabular*}
+	\begin{itemize}
+		\setlength\itemsep{3pt}
+		\item[\larrow{softcol}]  #4
+		\item[\larrow{softcol}]  #5
+		\item[\larrow{softcol}]  #6
+		\item[\larrow{softcol}]  #7
+	\end{itemize}
 \vspace{-6pt}
 
 }
@@ -261,36 +260,30 @@
 
 \newcommand{\expertiseB}[5]
 {
-\vspace{3pt}
 	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
  	\textcolor{black}{\textbf{#2}} & \textcolor{bgcol}{#1} 
-
 	\end{tabular*}
-\vspace{-12pt}
-\textcolor{softcol}{\hrule}
-\vspace{3pt}
-	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
-\larrow{softcol}  #3\\[3pt]
-\larrow{softcol}  #4\\[6pt]
-	\end{tabular*}
-\vspace{-6pt}
-
+	\textcolor{softcol}{\hrule}
+	\vspace{-3pt}
+	\begin{itemize}
+		\setlength\itemsep{3pt}
+		\item[\larrow{softcol}]  #3
+		\item[\larrow{softcol}]  #4
+	\end{itemize}
+	\vspace{-6pt}
 }
 
 \newcommand{\expertiseA}[5]
 {
-\vspace{3pt}
 	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
  	\textcolor{black}{\textbf{#2}} & \textcolor{bgcol}{#1} 
-
 	\end{tabular*}
-\vspace{-12pt}
-\textcolor{softcol}{\hrule}
-\vspace{6pt}
-	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
-\larrow{softcol}  #3\\[3pt]
-	\end{tabular*}
-
+	\textcolor{softcol}{\hrule}
+	\vspace{-3pt}
+	\begin{itemize}
+		\item[\larrow{softcol}]  #3
+	\end{itemize}
+	\vspace{-6pt}
 }
 
 % creates a stretched box as 
@@ -376,23 +369,43 @@
 
 %\hspace{-1.6cm}
 %\includegraphics[trim= 0 250 0 270,clip,width=1\linewidth+3.1cm]{myfoto.jpg}	%trimming relative to image size!
-\includegraphics[trim= 175 150 0 190, clip ,width=\linewidth]{myfoto.jpg}	%trimming relative to image size
-
+\includegraphics[trim= 100 170 0 275, clip ,width=\linewidth]{myfoto.jpg}	%trimming relative to image size
 %---------------------------------------------------------------------------------------
 %	SUMMARY
 %----------------------------------------------------------------------------------------
-\transparent{0.85}%
 \vspace{-130pt}
-\hspace{0.1\linewidth}
-\colorbox{bgcol}{
-	\parbox{0.5\linewidth}{
-		\transparent{1}%
-		\begin{center}
-		\larrow{sectcol}\larrow{sectcol}\textcolor{white}{I create and design software that helps people and business focus on the things they care about, leaving the rest for the machines.}
-		\end{center}
+
+\begin{center}
+	\hspace{-80pt}
+	% \transparent{0.1}%
+	\transparent{0.1}%
+	\colorbox{bgcol}{
+		% \transparent{0.1}%
+		\parbox{0.6\linewidth}{
+			\textcolor{white}{%
+			" I am passionate about creating and designing software 
+			that helps people and businesses focus on what's most important to them."
+			}
+		}
 	}
-}
-\vspace{68pt}
+\end{center}
+
+\vspace{60pt}
+
+
+% \transparent{0.85}%
+% \vspace*{-130pt}
+% \hspace{0.1\linewidth}
+% 	\put(10,-100) {\colorbox{bgcol}{
+% 	\parbox{0.5\linewidth}{
+% 		\transparent{1}%
+% 		\begin{center}
+% 		\textcolor{white}{" I am passionate about creating and designing software that helps people and businesses focus on what's most important to them."}
+% 		\end{center}
+% 	}
+% }
+% 	}
+% \vspace{68pt}
 
 %============================================================================%
 %
@@ -405,13 +418,8 @@
 %----------------------------------------------------------------------------------------
 \cvsection{About Me}
 
-I am working as a developer for a company located in Panama customizes and supports SAP.
-
-I have been working as a developer to create Applications/Servers/Mobile apps to enhance the usage and efficiency of our clients using SAP (Retail stores, Suppliers, Hotels, etc.).
-
-The primary language we use is C\#. I created generic integrations tools for our developers to easily implement SAP/SQL/DBs scenarios to our clients.
-
-I have a strong passion for functional programming, and I am trying to apply it as my primary programming technique.
+I have been working as a developer for a company located in Panama that customizes and gives support for SAP B1. I’ve created Applications/Servers/Mobile apps to enhance the usage and efficiency of our clients using SAP B1 (Retail stores, Suppliers, Hotels, etc.) The primary language we use is C\#. I created state-of-the-art tools for our developers to easily implement SAP B1/SQL/DBs integrations for our clients.
+I have a strong passion for functional programming, and I am using it as my primary programming technique.
 
 \vspace{7pt}
 
@@ -422,72 +430,63 @@ I have a strong passion for functional programming, and I am trying to apply it 
 \cvsection{Expertise}
 
 %
-\expertiseB{8 years experience}{C\#}
+\vspace{-3pt}
+\expertiseB{10 years experience}{C\#}
 {
-  Developed and maintain tools for our developers to be able to create more productive in creating business integrations (SAP, SQL, ReavenDB, DSL).
+	Developed and managed tools that help our developers to be more productive in creating business integrations (SAP B1, SQL, ReavenDB, DSL).
 }
 {
-	Maintaining important code base for fiscal printers implementation.
-}
-
-\expertiseA{3 years experience}{Java}
-{
-I have used Java to create plugins for Jira and Confluence which handles the company workflows for finance, sales, consulting and software development departments.
+	Maintain a substantial code base for fiscal printers implementation.
 }
 
-
-\expertiseB{9 years experience}{SQL}
+\expertiseA{5 years experience}{Java}
 {
-	Created Integrations between point of sale to/from SAP for big retails 
-
-	(Accounting, Invoices, Credit Notes, Inventory ...).
-}
-{
-	Experience in SAP HANA, Oracle, Postgres.
+	Used Java to create plugins for Jira and Confluence, which handles the company workflows for finance, sales, consulting, and software development departments. 
 }
 
-\expertiseB{2 years experience}{Nix/NixOS}
+
+\expertiseB{10 years experience}{SQL}
 {
-	Designed the QA server, deployment server and developement enviorments at work.
+	Created integrations between the point of sale to/from SAP B1 for big retails (Accounting, Invoices, Credit Notes, Inventory, etc.).
 }
 {
-	Most of my personal configurations, tools and applications are defined in nix expressions.
+	Experienced with the following DBs: SQL Server, SAP HANA, Oracle DB, and Postgres.
+}
+
+\expertiseB{4 years experience}{Nix/NixOS}
+{
+	Designed QA servers, deployment servers, and development environments.
+}
+{
+	Defined tools, applications, and configurations with nix expressions as part of my personal growth.
 }
 
 %\textcolor{softcol}{\hrule}
 
-
-
-\vspace{7pt}
 %---------------------------------------------------------------------------------------
 %	Employment SECTION
 %--------------------------------------------------------------------------------------
 \cvsection{Employment}
+\vspace{-3pt}
 
-\cvevent{2010/09-now}{Software Architect}{TopManage}
+\cvevent{09/2010-Present}{Software Engineer}{TopManage}
 {
-	Plan and design development department workflows - Source Control, Build Server, 
+	Created data web server over SAP B1 to help the company to access SAP B1 via REST protocol and allow our internal Jiras server to communicate with SAP B1 more directly, it is being used as an interface for external projects to have cloud access to SAP B1.
+}
+{
+	Plan and design software development workflow, which includes Source Control, Build Server, QA Server, and Jira ticketing system (Agile/Kanban). 
+}
+{
+	Trained new developers in the following: FP, OOP, Purity, Code Readability, DRY principle and Testing. 
+}
+{
+	Filtered, organized, and prioritized tickets coming from clients through Serivce Desk and managed the life cycle of each product. 
+}
 
-	QA Server and Jira ticketing system(Agile - Kanban).
-}
-{
-	Managed Service Desk and products releases - 
-	filter, organize and prioritize tickets coming from clients, managed products life cycle.
-}
-{
-	Trained new developers - FP, OOP, purity, Code Readability, DRY principle, Testing.
-}
-{
-	Created data web server over SAP - this server helps us to access SAP via REST protocol and allow our internal Jiras server to communicate with SAP more straightforwardly, We are using it as well as an interface for external projects to have cloud access to SAP.
-}
-\vspace{7pt}
-%---------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%--------------------------------------------------------------------------------------
 \cvsection{Education}
 
-\cveventA{In Progress}{Open University}{Computer Science}
-
+\cveventA{Present}{Open University}{Computer Science}
+\cveventA{}{Fluency in English, Hebrew, Spanish}{}
 %\textcolor{softcol}{\hrule}
 
 \end{minipage}}%
@@ -500,6 +499,7 @@ I have used Java to create plugins for Jira and Confluence which handles the com
 	\iconhref{Github}{12}{https://github.com/countoren}{https://github.com/countoren}{white}\\[6pt]
 	\iconhref{StackOverflow}{12}{Countoren}{https://stackoverflow.com/users/1457216/countoren}{white}\\[6pt]
 	\iconhref{Linkedin}{12}{Oren Rozen}{https://www.linkedin.com/in/oren-rozen-5272475a}{white}\\[6pt]
+	\iconhref{Phone}{12}{+1 (937) 867-9133}{}{white}\\[6pt]
 
 \end{metasection}
 	
@@ -507,25 +507,12 @@ I have used Java to create plugins for Jira and Confluence which handles the com
 %	META SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{metasection}{Fields}
-
-\icontext{Code}{12}{Software Development}{white}\\
-\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\\[6pt]
-
-\icontext{Comments}{12}{Consulting}{white}\\
-\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{white}\icon{Star}{12}{white}\\[6pt]
-
-\icontext{CodeBranch}{12}{Project Management}{white}\\
-\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{complcol}\icon{Star}{12}{white}\icon{Star}{12}{white}\icon{Star}{12}{white}\\[6pt]
-
-
-\end{metasection}
 
 
 \begin{metasection}{Technologies}
 
 \textcolor{white}{
-\icontext{UserTie}{12}{SAP}{white} \\[6pt]
+\icontext{UserTie}{12}{SAP Business One}{white} \\[6pt]
 \icontext{ClipboardCheck}{12}{Jira/Confulance}{white} \\[6pt]
 \icontext{Docker}{12}{Docker}{white} \\[6pt]
 \icontext{Laptop}{12}{Virtual Box}{white} \\[6pt]
@@ -557,6 +544,8 @@ I have used Java to create plugins for Jira and Confluence which handles the com
 
 \textcolor{white}{\LARGE{\icon{Linux}{24}{white} \icon{Apple}{24}{white}  \icon{Windows}{24}{white}}}
 \end{metasection}
+
+\vspace{80pt}
 
 %---------------------------------------------------------------------------------------
 %	QR CODE (optional)

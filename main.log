@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/NixOS.org) (preloaded format=pdflatex 2019.6.25)  13 JUL 2019 21:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/NixOS.org) (preloaded format=pdflatex 2019.6.25)  18 JUL 2019 11:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1476,7 +1476,7 @@ e/3c3fg8wd0da08xmijl45zj99h62b6rga-texlive-combined-full-2018/share/texmf/fonts
 /type1/arkandis/gillius/GilliusADF-Bold.pfb></nix/store/3c3fg8wd0da08xmijl45zj9
 9h62b6rga-texlive-combined-full-2018/share/texmf/fonts/type1/arkandis/gillius/G
 illiusADF-Regular.pfb>
-Output written on main.pdf (1 page, 296249 bytes).
+Output written on main.pdf (1 page, 296244 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream
